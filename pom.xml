@@ -12,6 +12,7 @@
     <url>https://github.com/ithinksky/flowable-action</url>
 
     <modules>
+        <module>flowable-action-guide</module>
     </modules>
 
     <properties>
@@ -73,14 +74,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-    </dependencies>
 
     <build>
         <pluginManagement>
