@@ -1,6 +1,5 @@
 package com.ithinksky.ch003;
 
-import com.ithinksky.ch002.ProcessEngineTest;
 import org.flowable.idm.engine.IdmEngine;
 import org.flowable.idm.engine.IdmEngineConfiguration;
 import org.junit.Before;
@@ -18,7 +17,7 @@ public class IdmEngineTest {
     @Before
     public void init() {
         // 创建权限引擎
-        InputStream inputStream = ProcessEngineTest.class.getClassLoader()
+        InputStream inputStream = IdmEngineTest.class.getClassLoader()
                 .getResourceAsStream("ch003/flowable.idm.cfg.xml");
         idmEngine = IdmEngineConfiguration.createIdmEngineConfigurationFromInputStream(inputStream).buildIdmEngine();
         String name = idmEngine.getName();
