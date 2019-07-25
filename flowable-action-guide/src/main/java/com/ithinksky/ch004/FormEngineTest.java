@@ -17,7 +17,7 @@ public class FormEngineTest {
 
     @Before
     public void init() {
-        // 创建权限引擎
+        // 创建表单引擎
         InputStream inputStream = FormEngineTest.class.getClassLoader()
                 .getResourceAsStream("ch004/flowable.form.cfg.xml");
         formEngine = FormEngineConfiguration.createFormEngineConfigurationFromInputStream(inputStream).buildFormEngine();
@@ -28,7 +28,7 @@ public class FormEngineTest {
 
     @Test
     public void testInit() {
-        // 初次执行的时候会初始化生成 6 张 权限引擎相关的表
+        // 初次执行的时候会初始化生成 6 张 表单引擎相关的表
     }
 
 
